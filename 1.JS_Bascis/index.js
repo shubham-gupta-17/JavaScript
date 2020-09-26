@@ -26,3 +26,31 @@ let person={
     age:22
 };
 console.log(person);
+
+// dot notation: in this notation we must know the property before runtime
+person.name="gupta";
+console.log(person.name);
+
+// bracket notation: it is useful if we have to select a property at runtime
+let property='age';
+person[property]=25;
+console.log(person.age);
+
+
+// Arrays
+let arr=[1,2,3,4]; // length and type of values are dynamic means can be changed during runtime
+arr[4]='shubham'; 
+let len=arr.length;
+console.log(len);
+console.log(arr);
+console.log(arr[2]+' '+arr[1]+" "+arr[3]);
+
+// calling function find
+let x=find(2,2);
+console.log(x);  // console.log is also a function 
+// functions : perform a task it is created using function keyword
+function find(x,y){
+    // console.log(x+y);
+    return x+y;
+}
+
