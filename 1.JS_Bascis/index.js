@@ -26,6 +26,13 @@ let person={
     age:22
 };
 console.log(person);
+// if we dont want the class to change then initialize it with const
+const namee={
+     surname:'gupta',
+     age:23
+};
+for(let key in namee)
+console.log(namee[key]);
 
 // dot notation: in this notation we must know the property before runtime
 person.name="gupta";
@@ -54,3 +61,77 @@ function find(x,y){
     return x+y;
 }
 
+// exponentiation operator x^y
+console.log(2**3);
+
+//difference between == and === operator
+console.log(2==='2');
+
+// logical operator
+console.log( false || "shubham");
+
+// control flow 
+let c=2;
+if(c>1) console.log("yes");
+
+
+// function landscape
+let ans=isLandscape(100,200);
+console.log(typeof ans);
+function isLandscape(height,width)
+{
+    return height>width ? portrait : isLandscape;
+}
+
+let r=Math.floor(1.3);  // smaller int number then float number
+console.log(r);
+
+let sum=0;
+for(let i=0;i<arr.length-1;i++)
+  sum+=arr[i];
+  console.log(sum);
+
+// foreach loop
+for(let m of arr) 
+  console.log(m);
+
+  // basic for loop
+    for(let i in arr)
+       console.log(arr[i]);
+
+
+
+
+  // print stars
+console.log();
+for(let i=0;i<5;i++)
+{
+    let pattern=''
+    for(let j=0;j<=i;j++)
+      pattern+='*';
+      console.log(pattern);
+}
+
+// Switch case
+let role='guest';
+switch(role){
+    case 'guest':
+    console.log('yes');
+    break; // if we dont use break then lower print statement will alsobe executed
+
+    case 'moderator':
+    console.log('no');
+    break;
+
+    default:
+        console.log('not');
+}
+
+
+
+// do while
+let i=1;
+do{
+    console.log(i);
+    i++;
+}while(i<4);
