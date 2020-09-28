@@ -93,3 +93,9 @@ combine=first.concat(second);
 first[0].val=10;
 console.log(first);
 console.log(combine); // here combine[0].val will also change as it is copied by reference
+
+// combine using spread operator
+combine=[...first,'a',...second,'b'];  // it also copies by reference 
+first[0].val=12;
+second[0]=8;  // it wont be shown in combine as it is copied by value
+console.log(combine);
