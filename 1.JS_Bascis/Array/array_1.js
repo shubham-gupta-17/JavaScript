@@ -18,7 +18,7 @@ a.splice(2,0,7,8); // (start idx,no of elements to  delete, numbers)
 
 
 
-//=======================================================================================================================
+// //=======================================================================================================================
 
 // find elements in primitive type
 a.indexOf(1); // if present will return index else -1, no start index hence search begins from idx=0
@@ -47,7 +47,7 @@ const cour1=course.findIndex(function(ele){
     return ele.id===2;  // returns index else -1;
 });
 console.log(cour1);
-// now instead of writiing function we can also use arrow function (=>) this is basically used to separate
+// now instead of writiing function we can also use Arrow function (=>) this is basically used to separate
 // parameters of function to its body
 const cour2=course.find((ele)=>{
     return ele.name==='a';
