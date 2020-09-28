@@ -121,3 +121,35 @@ console.log(str.split(' ')); //it separates the string whenever it encounters se
 
 
 // =============================================================================================================================================
+// every function in js
+
+// to find if all numbers are positive or not
+let allpositive=numbers.every((value)=>{
+    return value>=0
+})
+
+let atleastone=numbers.some((value)=>{
+    return value>=0;
+})
+// every checks all arrary and if any one ele fails condition returns false
+// some check till it does not find one ele which satisies condition
+
+let filtered=numbers.filter(ele=> ele>=0); 
+console.log(filtered); 
+// filter function returns all the elements in a new array which satisifies the condition
+let items=filtered.map((val)=>{
+    return '<li>' + val +"</li>"; // here we are mapping elements of array to string and returns a new array
+})
+
+// join returns a string separated by seapartor
+const html= "<ul> " + items.join(" ") + " </ul>";
+console.log(html);
+
+// mapping array elements to an object
+let obj=filtered.map(ele => ({value:ele}));
+console.log(obj);
+
+// now these functions are chainable i.e. we dont need to store filter array in a new array we can directly pass it to map function
+
+let new_items=numbers.filter(ele=>ele>=0).map(ele => "shubham_" + ele);
+console.log(new_items);
