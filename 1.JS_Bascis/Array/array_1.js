@@ -109,4 +109,29 @@ for(let ele of combine){  // for each loop
 // built in function for foreach loop
 combine.forEach((ele,idx)=>{
     console.log(idx,ele);
-})
+});
+
+// joining and combining
+let numbers=[1,2,3,4];
+console.log(numbers.join('-'));  // it takes a separator and separates the array elements with this separator and returns a string
+let str="THIS IS ME";
+console.log(str.split(' ')); //it separates the string whenever it encounters separator in string and returns an array
+
+
+// =============================================================================================================================================
+numbers.sort(); // sort the array
+numbers.reverse(); // reverse the array
+
+// when we have objects in array as elements
+console.log(course);
+course.sort((a,b)=>{
+    // if(a.id>b.id) - sort else skip
+    // to give command to sort 
+    // 1= if we want to sort 
+    //if(a.id<b.id) return 1; // sort in descending order
+    // if(a.id > b.id) return 1  sort in ascending order
+    if(a.id>b.id) return -1;
+    //if(a.name < b.name) return 1;
+    //return 0;
+});
+console.log(course);
