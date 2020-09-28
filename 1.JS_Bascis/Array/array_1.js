@@ -99,3 +99,14 @@ combine=[...first,'a',...second,'b'];  // it also copies by reference
 first[0].val=12;
 second[0]=8;  // it wont be shown in combine as it is copied by value
 console.log(combine);
+
+
+
+//iterating over arr
+for(let ele of combine){  // for each loop
+    console.log(ele);
+}
+// built in function for foreach loop
+combine.forEach((ele,idx)=>{
+    console.log(idx,ele);
+})
