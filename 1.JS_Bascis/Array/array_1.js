@@ -13,6 +13,11 @@ a.push(5,6);
 // add elements at mid
 a.splice(2,0,7,8); // (start idx,no of elements to  delete, numbers)
 
+
+
+
+
+
 //=======================================================================================================================
 
 // find elements in primitive type
@@ -52,6 +57,11 @@ console.log(cour2);
 const cour3=course.find(ele => ele.name==='b');
 console.log(cour2);
 
+
+
+
+
+
 //===================================================================================================
 // removing elemnts 
 // from start
@@ -62,6 +72,12 @@ let rem=a.splice(2,1); // returns the removed elements as a new array
                // 1: no of elements to remove starting from start index
 let mid=a.slice(2,4);// it returns all the elements between idx 2 to 4
 let duplicate=a.slice(); // returns the complete array a as a new array
+
+
+
+
+
+
 
 //============================================================================================================
 // Empty an array
@@ -79,6 +95,14 @@ arr.slice(0,arr.length);
 
 // 4:
 while(arr.length>0) arr.pop();
+
+
+
+
+
+
+
+
 
 //========================================================================================================
 // combine two arrays
@@ -120,6 +144,10 @@ let str="THIS IS ME";
 console.log(str.split(' ')); //it separates the string whenever it encounters separator in string and returns an array
 
 
+
+
+
+
 // =============================================================================================================================================
 // every function in js
 
@@ -151,5 +179,25 @@ console.log(obj);
 
 // now these functions are chainable i.e. we dont need to store filter array in a new array we can directly pass it to map function
 
-let new_items=numbers.filter(ele=>ele>=0).map(ele => "shubham_" + ele);
+let new_items=numbers
+              .filter(ele=>ele>=0)
+              .map(ele => "shubham_" + ele)
+              .filter(ele=>ele==="shubham_1");
 console.log(new_items);
+
+
+
+
+
+
+
+//==================================================================================
+// Reduce method
+let sum=0;
+for( let ele of numbers) sum+=ele;
+console.log(sum);
+// we can do this without using for loop by using reduce function
+sum=numbers.reduce((accumulator,current_value)=>{ // this fn needs two arguments 1:callback function, 2: initial value of accumulator
+    return accumulator+current_value;
+},0);
+console.log(sum);

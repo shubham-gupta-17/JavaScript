@@ -31,4 +31,6 @@ b
 [ 1, 2, 3, 4 ]
 <ul> <li>1</li> <li>2</li> <li>3</li> <li>4</li> </ul>
 [ { value: 1 }, { value: 2 }, { value: 3 }, { value: 4 } ]
-[ 'shubham_1', 'shubham_2', 'shubham_3', 'shubham_4' ]
+[ 'shubham_1' ]
+10
+20
