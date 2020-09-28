@@ -35,8 +35,8 @@ for(let entry of Object.entries(circle)) console.log(entry);
 // check if a property(key) exist in object
 let property='radius'
 if(property in circle) console.log("yes"); 
-// in -> iterate over indexs,property
-// of -> iterate over every element(their value) 
+// in -> iterate over indexs,property (for loop)
+// of -> iterate over every element(their value) (foreach loop) 
 // in objects we can only iterate over keys and not their values.
 
 

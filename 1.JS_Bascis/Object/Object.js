@@ -103,7 +103,7 @@ console.log(typeof s);
 // Template literals 
 // string ={};
 // boolean= true,false
-// using `` for defining string will allow us to show O/P as per our choice and for concatination use ${ };
+// using `` for defining string will allow us to show O/P as per our choice and for concatination use ${ }
 
 let sur_name='gupta';
 let another= `this  
