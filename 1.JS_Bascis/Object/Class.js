@@ -1,5 +1,11 @@
 // we will see how we can access a class
 // we can initialize class/Object either with let or const
+// Class in c++ is basically Objects in Js
+
+// empty Object
+let obj={};  // curly brackets stands for objects
+const obj1={};
+
 const details={
     name:'shubham',
     age:23,

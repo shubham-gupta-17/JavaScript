@@ -11,4 +11,5 @@ another method
 [Function: Circle]
 [Function: Object]
 [Function: Object]
+drawww
 [String: '']
