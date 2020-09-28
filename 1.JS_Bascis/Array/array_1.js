@@ -25,7 +25,9 @@ console.log(a);
 // finding elements in reference type (Objects)
 const course=[
     { id:1, name:'a'},
-    { id:2,name:'b'}
+    { id:2,name:'b'},
+    { id:2,name:'c'},
+    { id:1,name:'d'}
 ];
 course.includes({id:1,name:'a'}); // now this will return false because objects define with reference type
 // must point to same memory location as it check both parameter and type here in include function we have define another 
@@ -119,19 +121,3 @@ console.log(str.split(' ')); //it separates the string whenever it encounters se
 
 
 // =============================================================================================================================================
-numbers.sort(); // sort the array
-numbers.reverse(); // reverse the array
-
-// when we have objects in array as elements
-console.log(course);
-course.sort((a,b)=>{
-    // if(a.id>b.id) - sort else skip
-    // to give command to sort 
-    // 1= if we want to sort 
-    //if(a.id<b.id) return 1; // sort in descending order
-    // if(a.id > b.id) return 1  sort in ascending order
-    if(a.id>b.id) return -1;
-    //if(a.name < b.name) return 1;
-    //return 0;
-});
-console.log(course);
