@@ -66,3 +66,20 @@ function rest(...arg)
     return arg.reduce((a,b)=> a+b);
 }
 console.log(rest(1,2,3,4,5,6));
+
+
+
+
+
+
+
+//======================================================================================
+//Default parameters= it must be the last argument 
+function find(va,n,m=10){
+    return va+n+m;
+}
+console.log(find(100,1));
+
+
+
+//=======================================================================================
