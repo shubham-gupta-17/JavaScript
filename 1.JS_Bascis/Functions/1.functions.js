@@ -93,7 +93,7 @@ const person={
 }
 console.log(person.fullName());
 
-// implementing above using getter and setter
+// implementing above using getter and setter and using try and catch for error handling
 const person2={
     first:"shubham",
     second:"gupta",
@@ -101,11 +101,28 @@ const person2={
         return `${this.first} ${this.second}`
     },
     set fullName(value){
+        // error handling
+            if(typeof value!=="string") 
+            throw new Error("Value is not a string") ;
+
         let name=value.split(" ");
+        // now it might be possible that user has given only first or last name and not complete name
+        if(name.length!==2)
+            throw new Error("Enter full Name");
+
         this.first=name[0];
         this.second=name[1];
     }
 };
-person2.fullName="Ayush Gupta";  // what if we pass null or " "here it is not a valid string
+person2.fullName="Ayush Gupta";  // what if we pass null or " "here it is not a valid string hence we must do error handling
+
+try{
+    person2.fullName="null";
+//  person2.fullName="rajneesh";
+}
+catch(e){
+    alert(e); // it will displays the error
+}
 console.log(person2.fullName);
+
 
