@@ -114,6 +114,7 @@ const person2={
         this.second=name[1];
     }
 };
+console.log(person2.fullName);
 person2.fullName="Ayush Gupta";  // what if we pass null or " "here it is not a valid string hence we must do error handling
 
 try{

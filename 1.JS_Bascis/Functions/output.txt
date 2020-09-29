@@ -1,17 +1,61 @@
-HI
-true
-hi
-[Function: fun_2]
-[Arguments] { '0': 1, '1': 2, '2': 3, '3': 4, '4': 5, '5': 6 }
-21
-21
-111
-shubham gupta
-{ first: 'Ayush', second: 'Gupta', fullName: [Getter/Setter] }
-blue
-0
-1
-2
-3
-4
-5
+video { title: 'shubham' }
+<ref *1> Object [global] {
+  global: [Circular *1],
+  clearInterval: [Function: clearInterval],
+  clearTimeout: [Function: clearTimeout],
+  setInterval: [Function: setInterval],
+  setTimeout: [Function: setTimeout] {
+    [Symbol(nodejs.util.promisify.custom)]: [Function (anonymous)]
+  },
+  queueMicrotask: [Function: queueMicrotask],
+  clearImmediate: [Function: clearImmediate],
+  setImmediate: [Function: setImmediate] {
+    [Symbol(nodejs.util.promisify.custom)]: [Function (anonymous)]
+  },
+  title: 'apna'
+}
+[ 'b', 'c', 'd' ]
+apna b
+apna c
+apna d
+a b
+a c
+a d
+a b
+a c
+a d
+a b
+a c
+a d
+undefined
+[ 'b', 'c', 'd' ]
+apna b
+apna c
+apna d
+a b
+a c
+a d
+a b
+a c
+a d
+a b
+a c
+a d
+<ref *1> Object [global] {
+  global: [Circular *1],
+  clearInterval: [Function: clearInterval],
+  clearTimeout: [Function: clearTimeout],
+  setInterval: [Function: setInterval],
+  setTimeout: [Function: setTimeout] {
+    [Symbol(nodejs.util.promisify.custom)]: [Function (anonymous)]
+  },
+  queueMicrotask: [Function: queueMicrotask],
+  clearImmediate: [Function: clearImmediate],
+  setImmediate: [Function: setImmediate] {
+    [Symbol(nodejs.util.promisify.custom)]: [Function (anonymous)]
+  },
+  title: 'apna'
+}
+{ name: 'shubham' }
+{ name: 'ayus' }
+{ name: 'shubham' }
