@@ -117,12 +117,33 @@ const person2={
 person2.fullName="Ayush Gupta";  // what if we pass null or " "here it is not a valid string hence we must do error handling
 
 try{
-    person2.fullName="null";
-//  person2.fullName="rajneesh";
+  //person2.fullName=null;
+ //person2.fullName="rajneesh";
 }
 catch(e){
+    console.log(e);
     alert(e); // it will displays the error
 }
-console.log(person2.fullName);
+console.log(person2);
+
+// difference between error and exception
 
 
+//========================================================================================
+const color="blue";
+
+function start(){
+    console.log(color);  // here color is a global variable
+}
+start();
+
+
+// Problems with variables define with var
+function end(){
+    for(var i =0;i<5;i++) console.log(i);
+
+    console.log(i); // drawback of var
+}
+end();
+var age=30;  //when we define a global variable with var then it gets added to window object
+//even all the functions are also global and they get added to window object
