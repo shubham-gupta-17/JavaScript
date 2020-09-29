@@ -83,3 +83,29 @@ console.log(find(100,1));
 
 
 //=======================================================================================
+// Getters and Setters
+const person={
+    first:"shubham",
+    surname:"gupta",
+    fullName(){
+        return `${this.first} ${this.surname}`;
+    }
+}
+console.log(person.fullName());
+
+// implementing above using getter and setter
+const person2={
+    first:"shubham",
+    second:"gupta",
+    get fullName(){
+        return `${this.first} ${this.second}`
+    },
+    set fullName(value){
+        let name=value.split(" ");
+        this.first=name[0];
+        this.second=name[1];
+    }
+};
+person2.fullName="Ayush Gupta";  // what if we pass null or " "here it is not a valid string
+console.log(person2.fullName);
+
