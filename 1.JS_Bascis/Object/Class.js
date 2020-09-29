@@ -15,6 +15,18 @@ const details={
 details['age']=24;
 console.log(details['age']);
 
+// add parameters in object 
+details.occupation="SDE";
+details.work=function(){
+    company='pep';
+    location="pitampura";
+    return `${company} ${location}`;
+    // or we can return this too
+}
+
+console.log(details);
+console.log(details.work());
+
 // to iterate over parameters in object we will use in and not of
  for(let key in details)
   if(typeof details[key]==='string') // here i am comparing type of parameter with string
